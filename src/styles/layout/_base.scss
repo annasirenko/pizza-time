@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all .3s ease-in-out;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #1f1f1f;
+  ;
+  background-color: #fff;
+  animation: opening 1s ease-in-out;
+
+
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+
+button {
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  @include container;
+
+}
+
+
+@keyframes opening {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

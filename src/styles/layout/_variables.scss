@@ -1,0 +1,144 @@
+$dark:#1f1f1f;
+$text:#9f9f9f;
+$orange: #ffa650;
+$enabled: #a2a2a2;
+$disabled:#e6e6e6;
+$yellow:#fcff00;
+$ginger:#ff5441;
+
+@mixin text {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: $text;
+  line-height: 2.2rem;
+}
+
+@mixin roboto {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
+
+
+@mixin btn {
+  border-radius: 2.4rem;
+  background-color: $orange;
+  color: #fff;
+  font-weight: 400;
+  padding: 2rem 6rem;
+  transition: all .3s ease-in-out;
+  outline: none;
+}
+
+@mixin container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 160rem;
+
+  @include lg {
+    max-width: 98rem;
+
+  }
+
+  @include md {
+    max-width: 73.6rem;
+  }
+
+  @include sm {
+    max-width: 39rem;
+  }
+
+
+
+
+
+  // @include laptop{
+  //   max-width: 120rem;
+  // }
+  // @include tabletsPro{
+  //   max-width: 98rem;
+  //   width: 100%;
+  // }
+  // @include tablets{
+  //   max-width: 73.6rem;
+  // }
+  // @include phones{
+  //   max-width: 39rem;
+  // }
+}
+
+// @mixin desktopHd(){
+//   @media screen and (max-width: 2560px) {
+//     @content;
+//   }
+// }  
+
+// @mixin desktopLg(){
+//   @media screen and (max-width: 1980px) {
+//     @content;
+//   }
+// }
+
+// @mixin desktop(){
+//   @media screen and (max-width: 1800px) {
+//     @content;
+//   }
+// }
+// @mixin laptop(){
+//   @media screen and (max-width: 1440px) {
+//     @content;
+//   }
+// }
+
+// @mixin tabletsPro() {
+//   @media screen and (max-width: 1024px) {
+//     @content;
+//   }
+// }
+// @mixin tablets() {
+//   @media screen and (max-width: 768px) {
+//     @content;
+//   }
+// }
+
+@mixin xxl() {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin xl() {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin lg() {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin md() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin sm() {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin xs() {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin xxs() {
+  @media screen and (max-width: 360px) {
+    @content;
+  }
+}

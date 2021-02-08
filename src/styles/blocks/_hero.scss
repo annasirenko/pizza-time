@@ -1,0 +1,93 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background: $dark url('../img/hero.jpg') no-repeat center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 17rem 0 10rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+    }
+
+    & .container {
+        max-width: 50rem;
+
+        @include sm {
+            max-width: 36rem;
+        }
+
+        @include xxs {
+            max-width: 30rem;
+        }
+    }
+
+    &__block {
+        position: relative;
+    }
+
+    &__subtitle {
+        font-size: 2.4rem;
+        color: $yellow;
+
+        @include sm {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__title {
+        font-size: 5.5rem;
+        margin-top: 2rem;
+        margin-bottom: 5.3rem;
+
+        @include sm {
+            font-size: 4rem;
+        }
+
+        @include xxs {
+            font-size: 3.3rem
+        }
+
+    }
+
+    &__button {
+        & button {
+            @include btn;
+            background-color: $ginger;
+            border-radius: 2.8rem;
+            box-shadow: 0 0 38px #d44232;
+            padding: 2rem 7.5rem;
+
+            &:hover,
+            &:focus {
+                background: rgb(272, 25, 56);
+            }
+
+            &:active {
+                opacity: .8;
+                transform: scale(.6);
+            }
+
+            @include sm {
+                font-size: 1.6rem;
+                padding-top: 1.6rem;
+                padding-bottom: 1.6rem;
+            }
+
+        }
+    }
+
+    @include lg {
+        padding-top: 15rem;
+    }
+}
