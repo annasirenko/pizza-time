@@ -19,6 +19,23 @@ $ginger:#ff5441;
   font-weight: 300;
 }
 
+@mixin section {
+  padding: 12rem 0 11.6rem;
+
+  @include lg {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+}
+
+@mixin title {
+  color: $dark;
+  font-size: 4.8rem;
+  color: $orange;
+  text-align: center;
+  margin: 0 auto 4rem;
+}
+
 
 @mixin btn {
   border-radius: 2.4rem;
@@ -33,7 +50,7 @@ $ginger:#ff5441;
 @mixin container {
   width: 90%;
   margin: 0 auto;
-  max-width: 160rem;
+  max-width: 120rem;
 
   @include lg {
     max-width: 98rem;
@@ -47,62 +64,15 @@ $ginger:#ff5441;
   @include sm {
     max-width: 39rem;
   }
-
-
-
-
-
-  // @include laptop{
-  //   max-width: 120rem;
-  // }
-  // @include tabletsPro{
-  //   max-width: 98rem;
-  //   width: 100%;
-  // }
-  // @include tablets{
-  //   max-width: 73.6rem;
-  // }
-  // @include phones{
-  //   max-width: 39rem;
-  // }
 }
-
-// @mixin desktopHd(){
-//   @media screen and (max-width: 2560px) {
-//     @content;
-//   }
-// }  
-
-// @mixin desktopLg(){
-//   @media screen and (max-width: 1980px) {
-//     @content;
-//   }
-// }
-
-// @mixin desktop(){
-//   @media screen and (max-width: 1800px) {
-//     @content;
-//   }
-// }
-// @mixin laptop(){
-//   @media screen and (max-width: 1440px) {
-//     @content;
-//   }
-// }
-
-// @mixin tabletsPro() {
-//   @media screen and (max-width: 1024px) {
-//     @content;
-//   }
-// }
-// @mixin tablets() {
-//   @media screen and (max-width: 768px) {
-//     @content;
-//   }
-// }
 
 @mixin xxl() {
   @media screen and (min-width: 1400px) {
+    @content;
+  }
+}
+@mixin custom() {
+  @media screen and (max-width: 1250px) {
     @content;
   }
 }
