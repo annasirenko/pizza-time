@@ -1,0 +1,40 @@
+.contacts{
+    padding: 12rem 0;
+   
+   
+
+    & .container{
+        @include container;
+    }
+    
+    &__title{
+        @include title;
+        color: $dark;
+    }
+
+    &__content{
+        display: flex;
+        align-items: center;
+    }
+
+    &__left{
+        width: 50%;
+    }
+
+    &__map{
+        height: 45rem;
+        background: $yellow;
+    }
+
+    &__desc{
+        width: 50%;
+        align-items: center;
+    }
+    
+
+
+    &-pic{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
