@@ -1,0 +1,121 @@
+.popup {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    overflow: auto;
+
+    &.active{
+        pointer-events: auto;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__body {
+        display: flex;
+        min-height: 100%;
+        align-items: center;
+        justify-content: center;
+        @include sm{
+            align-items: unset;
+            height: 100%;
+        }
+
+    }
+
+    &__content {
+        background: #fff;
+        padding: 7rem 2rem;
+        width: 73rem;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        border-radius: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        @include sm{
+            width: 100%;
+            justify-content: center;
+            border-radius: 0;
+        }
+    }
+
+    &__button-close {
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+    }
+
+    &-phone {
+
+        margin-bottom: 3rem;
+
+        &__item {
+            display: block;
+            border: 3px solid $dark;
+            background: transparent;
+            padding: .7rem 1.6rem;
+            border-radius: 2.2rem;
+            color: $dark;
+            transition: color .3s ease-in-out, border .3s ease-in-out;
+
+            &:hover,
+            &:focus {
+                border-color: $orange;
+                color: $orange;
+            }
+        }
+
+
+
+
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+       
+        &:not(:first-child) {
+            margin-left: .6rem;
+
+            @include md {
+                margin-left: 1.5rem;
+                ;
+            }
+        }
+
+    }
+
+
+
+}
+
+
+.mobile-menu {
+    &__link {
+        color: #1f1f1f;
+        font-size: 2.4rem;
+        display: block;
+        margin-bottom: 3rem;
+        transition: color .3s ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: $orange;
+        }
+        @include sm{
+            margin-bottom: 6rem;
+        }
+
+    }
+
+}

@@ -2,371 +2,469 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Заказать пиццу онлайн">
-    <meta name="robots" content="index,follow">
-    <link rel="stylesheet" href="./main.min.css">
-    <title>Pizza Time</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Заказать пиццу онлайн">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="./main.min.css">
+<title>Pizza Time</title>
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="container">
-            <div class="header__left">
-                <a href="#"><svg class="header__logo">
-                        <use xlink:href="./img/icons/sprite.svg#logo"></use>
-                    </svg></a>
+<header class="header">
+    <div class="container">
+        <div class="header__left">
+            <a href="#"><svg class="header__logo">
+                    <use xlink:href="./img/icons/sprite.svg#logo"></use>
+                </svg></a>
 
+        </div>
+        <div class="header__right">
+            <nav class="nav">
+                <ul class="header__nav">
+                    <li class="header__item"><a href="#menu">пицца</a></li>
+                    <li class="header__item"><a href="#about">о нас</a></li>
+                    <li class="header__item"><a href="#contacts">контакты</a></li>
+                </ul>
+            </nav>
+            <a class="header__btn" href="tel:+380962333232">+38(096)233-32-32</a>
+            <div class="header__hamburger">
+                <button class="btn-menu" type="button">
+                    <span class="btn-menu__box">
+                        <span class="btn-menu__inner"></span>
+                    </span>
+                </button>
             </div>
-            <div class="header__right">
-                <nav class="nav">
-                    <ul class="header__nav">
-                        <li class="header__item"><a href="#">пицца</a></li>
-                        <li class="header__item"><a href="#">о нас</a></li>
-                        <li class="header__item"><a href="#">контакты</a></li>
+        </div>
+    </div>
+</header>
+<section id="hero" class="hero">
+    <div class="container">
+
+        <div class="hero__block">
+            <h3 class="hero__subtitle">от итальянского повара</h3>
+            <h1 class="hero__title">Лучшая пицца в Днепре</h1>
+            <div class="hero__button"><button class="btn" type="button">Выбрать</button></div>
+        </div>
+    </div>
+
+
+</section>
+<section id="menu" class="menu">
+    <div class="container">
+        <header class="menu__header">
+            <h2 class="menu__title">Меню</h2>
+            <nav class="menu__nav">
+                <ul class="menu__list">
+                    <li class="menu__item"><button class="menu__item--button active" type="button">все</button></li>
+                    <li class="menu__item"><button class="menu__item--button" type="button">грибные</button></li>
+                    <li class="menu__item"><button class="menu__item--button" type="button">мясные</button></li>
+                    <li class="menu__item"><button class="menu__item--button" type="button">сырные</button></a></li>
+                </ul>
+            </nav>
+        </header>
+        <ul class="menu__cards">
+            <li class="menu__card">
+                <div class="menu__product catalog">
+                    <img src="./img/1.png" alt="" class="menu__img">
+                    <div class="menu__content">
+                        <h3 class="menu__card--title">Салями</h3>
+                        <p class="menu__desc">Салями, картофель и морковь, огурцы
+                            маринованные, моцарелла, цыпленок,
+                            ветчина и французский соус </p>
+                    </div>
+                    <ul class="menu__card--tabs">
+                        <li class="menu__card--item">
+                            <button class="menu__card--button active" type="button">35см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
+                        </li>
                     </ul>
-                </nav>
-                <a class="header__btn" href="tel:380962333232">+38(096)233-32-32</a>
-                <div class="header__hamburger">
-                    <button class="btn-menu" type="button">
-                        <span class="btn-menu__box">
-                            <span class="btn-menu__inner"></span>
-                        </span>
-                    </button>
+                    <div class="menu__bottom">
+                        <div class="menu__price">
+                            <span class="menu__price--value">300</span>
+                            <span class="menu__price--currency">&#8372;</span>
+                        </div>
+                        <button class="menu__btn" type="button">заказать</button>
+                    </div>
+
+                </div>
+            </li>
+            <li class="menu__card">
+                <div class="menu__product catalog">
+                    <img src="./img/2.png" alt="" class="menu__img">
+                    <div class="menu__content">
+                        <h3 class="menu__card--title">Хит</h3>
+                        <p class="menu__desc">Картофель и морковь, огурцы
+                            маринованные, моцарелла, цыпленок,
+                            ветчина и французский соус </p>
+                    </div>
+                    <ul class="menu__card--tabs">
+                        <li class="menu__card--item">
+                            <button class="menu__card--button active" type="button">35см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
+                        </li>
+                    </ul>
+                    <div class="menu__bottom">
+                        <div class="menu__price">
+                            <span class="menu__price--value">450</span>
+                            <span class="menu__price--currency">&#8372;</span>
+                        </div>
+                        <button class="menu__btn" type="button">заказать</button>
+                    </div>
+
+                </div>
+            </li>
+            <li class="menu__card">
+                <div class="menu__product catalog">
+                    <img src="./img/3.png" alt="" class="menu__img">
+                    <div class="menu__content">
+                        <h3 class="menu__card--title">Ветчина-грибы</h3>
+                        <p class="menu__desc">Салями, картофель и морковь, огурцы
+                            маринованные, моцарелла, цыпленок,
+                            ветчина и французский соус </p>
+                    </div>
+                    <ul class="menu__card--tabs">
+                        <li class="menu__card--item">
+                            <button class="menu__card--button active" type="button">35см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
+                        </li>
+                    </ul>
+                    <div class="menu__bottom">
+                        <div class="menu__price">
+                            <span class="menu__price--value">350</span>
+                            <span class="menu__price--currency">&#8372;</span>
+                        </div>
+                        <button class="menu__btn" type="button">заказать</button>
+                    </div>
+
+                </div>
+            </li>
+            <li class="menu__card">
+                <div class="menu__product catalog">
+                    <img src="./img/4.png" alt="" class="menu__img">
+                    <div class="menu__content">
+                        <h3 class="menu__card--title">Карбонара</h3>
+                        <p class="menu__desc">Салями, курица, моцарелла, говядина,
+                            ветчина и французский соус </p>
+                    </div>
+                    <ul class="menu__card--tabs">
+                        <li class="menu__card--item">
+                            <button class="menu__card--button active" type="button">35см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
+                        </li>
+                    </ul>
+                    <div class="menu__bottom">
+                        <div class="menu__price">
+                            <span class="menu__price--value">500</span>
+                            <span class="menu__price--currency">&#8372;</span>
+                        </div>
+                        <button class="menu__btn" type="button">заказать</button>
+                    </div>
+
+                </div>
+            </li>
+            <li class="menu__card">
+                <div class="menu__product catalog">
+                    <img src="./img/5.png" alt="" class="menu__img">
+                    <div class="menu__content">
+                        <h3 class="menu__card--title">Фирменная</h3>
+                        <p class="menu__desc">Томатно-сливочный соус, бекон, моцарелла </p>
+                    </div>
+                    <ul class="menu__card--tabs">
+                        <li class="menu__card--item">
+                            <button class="menu__card--button active" type="button">35см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
+                        </li>
+                    </ul>
+                    <div class="menu__bottom">
+                        <div class="menu__price">
+                            <span class="menu__price--value">380</span>
+                            <span class="menu__price--currency">&#8372;</span>
+                        </div>
+                        <button class="menu__btn" type="button">заказать</button>
+                    </div>
+
+                </div>
+            </li>
+            <li class="menu__card">
+                <div class="menu__product catalog">
+                    <img src="./img/6.png" alt="" class="menu__img">
+                    <div class="menu__content">
+                        <h3 class="menu__card--title">Ассорти</h3>
+                        <p class="menu__desc">Картофель моцарелла, цыпленок, грибы,
+                            ветчина и французский соус </p>
+                    </div>
+                    <ul class="menu__card--tabs">
+                        <li class="menu__card--item">
+                            <button class="menu__card--button active" type="button">35см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
+                        </li>
+                    </ul>
+                    <div class="menu__bottom">
+                        <div class="menu__price">
+                            <span class="menu__price--value">300</span>
+                            <span class="menu__price--currency">&#8372;</span>
+                        </div>
+                        <button class="menu__btn" type="button">заказать</button>
+                    </div>
+
+                </div>
+            </li>
+            <li class="menu__card">
+                <div class="menu__product catalog">
+                    <img src="./img/7.png" alt="" class="menu__img">
+                    <div class="menu__content">
+                        <h3 class="menu__card--title">Л-01</h3>
+                        <p class="menu__desc">Томаты, моцарелла, цыпленок,
+                            ветчина и французский соус, секректный
+                            ингредиент </p>
+                    </div>
+                    <ul class="menu__card--tabs">
+                        <li class="menu__card--item">
+                            <button class="menu__card--button active" type="button">35см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
+                        </li>
+                    </ul>
+                    <div class="menu__bottom">
+                        <div class="menu__price">
+                            <span class="menu__price--value">420</span>
+                            <span class="menu__price--currency">&#8372;</span>
+                        </div>
+                        <button class="menu__btn" type="button">заказать</button>
+                    </div>
+
+                </div>
+            </li>
+            <li class="menu__card">
+                <div class="menu__product catalog">
+                    <img src="./img/8.png" alt="" class="menu__img">
+                    <div class="menu__content">
+                        <h3 class="menu__card--title">Три сыра</h3>
+                        <p class="menu__desc">Чеддер, камамбер, эдам </p>
+                    </div>
+                    <ul class="menu__card--tabs">
+                        <li class="menu__card--item">
+                            <button class="menu__card--button active" type="button">35см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
+                        </li>
+                    </ul>
+                    <div class="menu__bottom">
+                        <div class="menu__price">
+                            <span class="menu__price--value">460</span>
+                            <span class="menu__price--currency">&#8372;</span>
+                        </div>
+                        <button class="menu__btn" type="button">заказать</button>
+                    </div>
+
+                </div>
+            </li>
+            <li class="menu__card">
+                <div class="menu__product catalog">
+
+                    <img src="./img/9.png" alt="" class="menu__img">
+                    <div class="menu__content">
+                        <h3 class="menu__card--title">Мясная</h3>
+                        <p class="menu__desc">Курица, говядина, сливочный соус, салями,
+                            огурцы маринованные, томаты, грибы,
+                            бекон </p>
+                    </div>
+                    <ul class="menu__card--tabs">
+                        <li class="menu__card--item">
+                            <button class="menu__card--button active" type="button">35см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
+                        </li>
+                        <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
+                        </li>
+                    </ul>
+                    <div class="menu__bottom">
+                        <div class="menu__price">
+                            <span class="menu__price--value">450</span>
+                            <span class="menu__price--currency">&#8372;</span>
+                        </div>
+                        <button class="menu__btn" type="button">заказать</button>
+                    </div>
+
+
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</section>
+<section id="about" class="about">
+    <img src="./img/about.jpg" alt="" class="about__img">
+    <div class="container about__container">
+        <div class="about__content">
+            <h2 class="about__title">О нас</h2>
+            <p class="about__desc">Доставим вам горячую пиццу менее чем за час или пицца бесплатно.
+                Мы готовим пиццу только из свежих продуктов. Каждый день мы покупаем свежие овощи, грибы и мясо.</p>
+        </div>
+    </div>
+</section>
+<section id="contacts" class="contacts">
+    <div class="container">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__content">
+            <div class="contacts__left"><div class="contacts__map"></div></div>
+            <div class="contacts__right">
+                <div class="contacts__right--item">
+                    <h3 class="contacts__right--title">Адрес</h3>
+                    <p class="contacts__right--text">г.Днепр, ул. Дмитрия Яворницкого, 8</p>
+                </div>
+                <div class="contacts__right--item">
+                    <h3 class="contacts__right--title">Телефон</h3>
+                    <a href="tel:+380962333232" class="contacts__phone contacts__right--text">+38 (096) 233-32-32</a>
+                </div>
+                <div class="contacts__right--item">
+                    <h3 class="contacts__right--title">Социальные сети</h3>
+                    <ul class="contacts__list">
+                        <li class="contacts__item"><a href="#" target="_blank"><svg class="contacts-pic">
+                                    <use xlink:href="./img/icons/sprite.svg#vk"></use>
+                                </svg></a></li>
+                        <li class="contacts__item"><a href="#" target="_blank"><svg class="contacts-pic">
+                                    <use xlink:href="./img/icons/sprite.svg#facebook"></use>
+                                </svg></a></li>
+                        <li class="contacts__item"><a href="#" target="_blank"><svg class="contacts-pic">
+                                    <use xlink:href="./img/icons/sprite.svg#instagram"></use>
+                                </svg></a></li>
+                    </ul>
+        
                 </div>
             </div>
         </div>
-    </header>
-    <section class="hero">
-        <div class="container">
 
-            <div class="hero__block">
-                <h3 class="hero__subtitle">от итальянского повара</h3>
-                <h1 class="hero__title">Лучшая пицца в Днепре</h1>
-                <div class="hero__button"><button class="btn" type="button">Выбрать</button></div>
-            </div>
-        </div>
+    </div>
+</section>
+<footer id="footer" class="footer">
+    <div class="container">
+        <p class="footer__desc">PizzaTime 2021</p></div>
+</footer>
 
-
-    </section>
-    <section class="menu">
-        <div class="container">
-            <header class="menu__header">
-                <h2 class="menu__title">Меню</h2>
-                <nav class="menu__nav">
-                    <ul class="menu__list">
-                        <li class="menu__item"><button class="menu__item--button active" type="button">все</button></li>
-                        <li class="menu__item"><button class="menu__item--button" type="button">грибные</button></li>
-                        <li class="menu__item"><button class="menu__item--button" type="button">мясные</button></li>
-                        <li class="menu__item"><button class="menu__item--button" type="button">сырные</button></a></li>
+<div class="popup">
+    <div class="popup__body">
+            <div class="popup__content">
+                <button class = "button-close popup__button-close"></button>
+                <nav class = "mobile-menu">
+                    <ul class="mobile-menu__ul">
+                        <li class="mobile-menu__li"><a href="#menu" class="mobile-menu__link">Пицца</a></li>
+                        <li class="mobile-menu__li"><a href="#about" class="mobile-menu__link">О нас</a></li>
+                        <li class="mobile-menu__li"><a href="#contacts" class="mobile-menu__link">Контакты</a></li>            
                     </ul>
                 </nav>
-            </header>
-            <ul class="menu__cards">
-                <li class="menu__card">
-                    <div class="menu__product catalog">
-                        <img src="./img/1.png" alt="" class="menu__img">
-                        <div class="menu__content">
-                            <h3 class="menu__card--title">Салями</h3>
-                            <p class="menu__desc">Салями, картофель и морковь, огурцы
-                                маринованные, моцарелла, цыпленок,
-                                ветчина и французский соус </p>
-                        </div>
-                        <ul class="menu__card--tabs">
-                            <li class="menu__card--item">
-                                <button class="menu__card--button active" type="button">35см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
-                            </li>
-                        </ul>
-                        <div class="menu__bottom">
-                            <div class="menu__price">
-                                <span class="menu__price--value">300</span>
-                                <span class="menu__price--currency">&#8372;</span>
-                            </div>
-                            <button class="menu__btn" type="button">заказать</button>
-                        </div>
 
-                    </div>
-                </li>
-                <li class="menu__card">
-                    <div class="menu__product catalog">
-                        <img src="./img/2.png" alt="" class="menu__img">
-                        <div class="menu__content">
-                            <h3 class="menu__card--title">Хит</h3>
-                            <p class="menu__desc">Картофель и морковь, огурцы
-                                маринованные, моцарелла, цыпленок,
-                                ветчина и французский соус </p>
-                        </div>
-                        <ul class="menu__card--tabs">
-                            <li class="menu__card--item">
-                                <button class="menu__card--button active" type="button">35см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
-                            </li>
-                        </ul>
-                        <div class="menu__bottom">
-                            <div class="menu__price">
-                                <span class="menu__price--value">450</span>
-                                <span class="menu__price--currency">&#8372;</span>
-                            </div>
-                            <button class="menu__btn" type="button">заказать</button>
-                        </div>
+                <div class="phone popup-phone">
+                    <a href="tel:+380962333232" class = "phone__item popup-phone__item">+38 (096) 233-32-32</a>
+                </div> 
+                
+                <ul class="popup__list">
+                    <li class="popup__item"><a href="#" target="_blank"><svg class="contacts-pic">
+                                <use xlink:href="./img/icons/sprite.svg#vk"></use>
+                            </svg></a></li>
+                    <li class="popup__item"><a href="#" target="_blank"><svg class="contacts-pic">
+                                <use xlink:href="./img/icons/sprite.svg#facebook"></use>
+                            </svg></a></li>
+                    <li class="popup__item"><a href="#" target="_blank"><svg class="contacts-pic">
+                                <use xlink:href="./img/icons/sprite.svg#instagram"></use>
+                            </svg></a></li>
+                </ul>
 
-                    </div>
-                </li>
-                <li class="menu__card">
-                    <div class="menu__product catalog">
-                        <img src="./img/3.png" alt="" class="menu__img">
-                        <div class="menu__content">
-                            <h3 class="menu__card--title">Ветчина-грибы</h3>
-                            <p class="menu__desc">Салями, картофель и морковь, огурцы
-                                маринованные, моцарелла, цыпленок,
-                                ветчина и французский соус </p>
-                        </div>
-                        <ul class="menu__card--tabs">
-                            <li class="menu__card--item">
-                                <button class="menu__card--button active" type="button">35см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
-                            </li>
-                        </ul>
-                        <div class="menu__bottom">
-                            <div class="menu__price">
-                                <span class="menu__price--value">350</span>
-                                <span class="menu__price--currency">&#8372;</span>
-                            </div>
-                            <button class="menu__btn" type="button">заказать</button>
-                        </div>
-
-                    </div>
-                </li>
-                <li class="menu__card">
-                    <div class="menu__product catalog">
-                        <img src="./img/4.png" alt="" class="menu__img">
-                        <div class="menu__content">
-                            <h3 class="menu__card--title">Карбонара</h3>
-                            <p class="menu__desc">Салями, курица, моцарелла, говядина,
-                                ветчина и французский соус </p>
-                        </div>
-                        <ul class="menu__card--tabs">
-                            <li class="menu__card--item">
-                                <button class="menu__card--button active" type="button">35см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
-                            </li>
-                        </ul>
-                        <div class="menu__bottom">
-                            <div class="menu__price">
-                                <span class="menu__price--value">500</span>
-                                <span class="menu__price--currency">&#8372;</span>
-                            </div>
-                            <button class="menu__btn" type="button">заказать</button>
-                        </div>
-
-                    </div>
-                </li>
-                <li class="menu__card">
-                    <div class="menu__product catalog">
-                        <img src="./img/5.png" alt="" class="menu__img">
-                        <div class="menu__content">
-                            <h3 class="menu__card--title">Фирменная</h3>
-                            <p class="menu__desc">Томатно-сливочный соус, бекон, моцарелла </p>
-                        </div>
-                        <ul class="menu__card--tabs">
-                            <li class="menu__card--item">
-                                <button class="menu__card--button active" type="button">35см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
-                            </li>
-                        </ul>
-                        <div class="menu__bottom">
-                            <div class="menu__price">
-                                <span class="menu__price--value">380</span>
-                                <span class="menu__price--currency">&#8372;</span>
-                            </div>
-                            <button class="menu__btn" type="button">заказать</button>
-                        </div>
-
-                    </div>
-                </li>
-                <li class="menu__card">
-                    <div class="menu__product catalog">
-                        <img src="./img/6.png" alt="" class="menu__img">
-                        <div class="menu__content">
-                            <h3 class="menu__card--title">Ассорти</h3>
-                            <p class="menu__desc">Картофель моцарелла, цыпленок, грибы,
-                                ветчина и французский соус </p>
-                        </div>
-                        <ul class="menu__card--tabs">
-                            <li class="menu__card--item">
-                                <button class="menu__card--button active" type="button">35см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
-                            </li>
-                        </ul>
-                        <div class="menu__bottom">
-                            <div class="menu__price">
-                                <span class="menu__price--value">300</span>
-                                <span class="menu__price--currency">&#8372;</span>
-                            </div>
-                            <button class="menu__btn" type="button">заказать</button>
-                        </div>
-
-                    </div>
-                </li>
-                <li class="menu__card">
-                    <div class="menu__product catalog">
-                        <img src="./img/7.png" alt="" class="menu__img">
-                        <div class="menu__content">
-                            <h3 class="menu__card--title">Л-01</h3>
-                            <p class="menu__desc">Томаты, моцарелла, цыпленок,
-                                ветчина и французский соус, секректный
-                                ингредиент </p>
-                        </div>
-                        <ul class="menu__card--tabs">
-                            <li class="menu__card--item">
-                                <button class="menu__card--button active" type="button">35см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
-                            </li>
-                        </ul>
-                        <div class="menu__bottom">
-                            <div class="menu__price">
-                                <span class="menu__price--value">420</span>
-                                <span class="menu__price--currency">&#8372;</span>
-                            </div>
-                            <button class="menu__btn" type="button">заказать</button>
-                        </div>
-
-                    </div>
-                </li>
-                <li class="menu__card">
-                    <div class="menu__product catalog">
-                        <img src="./img/8.png" alt="" class="menu__img">
-                        <div class="menu__content">
-                            <h3 class="menu__card--title">Три сыра</h3>
-                            <p class="menu__desc">Чеддер, камамбер, эдам </p>
-                        </div>
-                        <ul class="menu__card--tabs">
-                            <li class="menu__card--item">
-                                <button class="menu__card--button active" type="button">35см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
-                            </li>
-                        </ul>
-                        <div class="menu__bottom">
-                            <div class="menu__price">
-                                <span class="menu__price--value">460</span>
-                                <span class="menu__price--currency">&#8372;</span>
-                            </div>
-                            <button class="menu__btn" type="button">заказать</button>
-                        </div>
-
-                    </div>
-                </li>
-                <li class="menu__card">
-                    <div class="menu__product catalog">
-
-                        <img src="./img/9.png" alt="" class="menu__img">
-                        <div class="menu__content">
-                            <h3 class="menu__card--title">Мясная</h3>
-                            <p class="menu__desc">Курица, говядина, сливочный соус, салями,
-                                огурцы маринованные, томаты, грибы,
-                                бекон </p>
-                        </div>
-                        <ul class="menu__card--tabs">
-                            <li class="menu__card--item">
-                                <button class="menu__card--button active" type="button">35см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">30см</button>
-                            </li>
-                            <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
-                            </li>
-                        </ul>
-                        <div class="menu__bottom">
-                            <div class="menu__price">
-                                <span class="menu__price--value">450</span>
-                                <span class="menu__price--currency">&#8372;</span>
-                            </div>
-                            <button class="menu__btn" type="button">заказать</button>
-                        </div>
-
-
-                    </div>
-                </li>
-
-            </ul>
-        </div>
-    </section>
-    <section class="about">
-        <img src="./img/about.jpg" alt="" class="about__img">
-        <div class="container about__container">
-            <div class="about__content">
-                <h2 class="about__title">О нас</h2>
-                <p class="about__desc">Доставим вам горячую пиццу менее чем за час или пицца бесплатно.
-                    Мы готовим пиццу только из свежих продуктов. Каждый день мы покупаем свежие овощи, грибы и мясо.</p>
             </div>
-        </div>
-    </section>
-    <section class="contacts">
-        <div class="container">
-            <h2 class="contacts__title">Контакты</h2>
-            <div class="contacts__content">
-                <div class="contacts__left"><div class="contacts__map"></div></div>
-                <div class="contacts__right">
-                    <div class="contacts__right--item">
-                        <h3 class="contacts__right--title">Адрес</h3>
-                        <p class="contacts__right--text">г.Днепр, ул. Дмитрия Яворницкого, 8</p>
-                    </div>
-                   <div class="contacts__right--item">
-                        <h3 class="contacts__right--title">Телефон</h3>
-                        <a href="tel:380962333232" class="contacts__phone contacts__right--text">+38 (096) 233-32-32</a>
-                   </div>
-                    <div class="contacts__right--item">
-                        <h3 class="contacts__right--title">Социальные сети</h3>
-                        <ul class="contacts__list">
-                            <li class="contacts__item"><a href="#" target="_blank"><svg class="contacts-pic">
-                                        <use xlink:href="./img/icons/sprite.svg#vk"></use>
-                                    </svg></a></li>
-                            <li class="contacts__item"><a href="#" target="_blank"><svg class="contacts-pic">
-                                        <use xlink:href="./img/icons/sprite.svg#facebook"></use>
-                                    </svg></a></li>
-                            <li class="contacts__item"><a href="#" target="_blank"><svg class="contacts-pic">
-                                        <use xlink:href="./img/icons/sprite.svg#instagram"></use>
-                                    </svg></a></li>
-                        </ul>
-            
-                    </div>
+        
+    </div>
+</div>
+
+<div class="popup popup__order active">
+    <div class="popup__body">
+            <div class="popup__content">
+                <button class = "button-close popup__button-close"></button>
+                <h2 class="popup__title">Заполните форму</h2>
+                <p class="popup__subtitle">Мы привезем вам горячую пиццу за 50 минут</p>
+                <div class="popup__data">
+                    <img src="./img/1.png" alt="" class="popup__img">
+                    <h3 class="popup__data--title">
+                        <span>Салями</span>
+                        <span>850</span> &#8372;
+                    </h3>
+                    <p class="popup__size">35 см</p>
                 </div>
+                <form action="#" class="form">
+                    <input type="hidden" name="pizza">
+                    <input type="hidden" name="price">
+                    <input type="hidden" name="size">
+                    <input type="text" class="form__input" name="name" placeholder="Имя" required>
+                    <input type="text" class="form__input" name="phone" placeholder="Телефон" required>
+                    <input type="text" class="form__input" name="address" placeholder="Адрес" required>
+                    <select name="payment" id="" class="form__input">
+                        <option value="Оплата наличными">Оплата наличными</option>
+                        <option value="Оплата картой">Оплата картой</option>
+                    </select>
+                     <button class="form__button" type="submit">Отправить</button>
+                </form>                
+               
+
             </div>
-
+        
+    </div>
+    <!-- <div class="popup popup-order">
+        <div class="popup__wrapper">
+          <div class="popup__inner">
+            <div class="popup__content">
+              <button class="btn-close popup__btn-close"></button>
+              <h2 class="page-title popup__title">Заполните форму</h2>
+              <p class="popup__subtitle popup__subtitle--order">Мы привезем вам горячую пиццу за 50 минут</p>
+              <div class="order">
+                <img class="order__img" src="img/section-catalog/1.png" alt="">
+                <h3 class="order__title">
+                  <span>Салями</span>
+                  <span>850</span> &#8381;
+                </h3>
+                <p class="order__size">35 см</p>
+                <form class="form">
+                  <input type="hidden" name="пицца">
+                  <input type="hidden" name="цена">
+                  <input type="hidden" name="размер">
+                  <input class="form__input" type="text" name="имя" placeholder="Имя" required>
+                  <input class="form__input" type="text" name="телефон" placeholder="Телефон" required>
+                  <input class="form__input" type="text" name="адрес" placeholder="Адрес" required>
+                  <select class="form__input" name="оплата">
+                    <option value="Оплата наличными">Оплата наличными</option>
+                    <option value="Оплата картой">Оплата картой</option>
+                  </select>
+                  <button class="btn form__btn" type="submit">Отправить</button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <p class="footer__desc">PizzaTime 2021</p></div>
-    </footer>
-
+      </div> -->
+</div>
 </body>
 
 </html>

@@ -237,6 +237,11 @@
         &:focus {
             background: rgb(272, 25, 56);
         }
+
+        &:active {
+                opacity: .8;
+                transform: scale(.6);
+            }
     }
 
     &__product {
