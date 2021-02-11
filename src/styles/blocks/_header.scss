@@ -77,6 +77,9 @@
         background: transparent;
         padding: 1.4rem 2rem;
         border-radius: 2.8rem;
+        transition: color .3s ease-in-out, border .3s ease-in-out;     
+        
+       
 
         &:hover,
         &:focus {

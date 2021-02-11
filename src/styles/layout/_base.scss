@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: background .3s ease-in-out, color .3s ease-in-out, opacity .3s ease-in-out, border .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
 }
 
 html {
@@ -49,6 +49,7 @@ a {
   text-decoration: none;
   color: #fff;
   cursor: pointer;
+  // transition: color .3s ease-in-out;
 }
 
 li {

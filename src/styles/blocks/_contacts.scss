@@ -1,10 +1,45 @@
 .contacts{
     padding: 12rem 0;
-   
+    position: relative; 
+    overflow: hidden;
+    @include md{
+        padding-bottom: 0;
+    }
+  
    
 
     & .container{
-        @include container;
+        
+        position: relative;
+        &::before{
+            content:'';
+            position: absolute;
+            background: url('./img/tomato.jpg') no-repeat;
+            background-size: cover;
+            width: 67.2rem;
+            height: 39.7rem;
+            bottom: -10rem;
+            right: -35rem;
+            z-index: -1;
+            @include xxxl{
+                right: -25rem;
+                
+            }
+          
+            @include xxl{
+                right: -17rem;
+                bottom: -20rem;
+                
+            }
+
+            @include custom{
+                right: -12rem;
+            }
+            @include xl{
+                content: none;
+            }
+          
+        }
     }
     
     &__title{
@@ -15,26 +50,85 @@
     &__content{
         display: flex;
         align-items: center;
+       @include md{
+        flex-wrap: wrap;
+        justify-content: center;
+       }
+        
     }
 
     &__left{
         width: 50%;
+        @include md{
+            width: 100%;
+            order: 1;
+        }
     }
 
     &__map{
         height: 45rem;
-        background: $yellow;
+        background: #fef0b4;
+        @include lg{
+            height: 35rem;
+        }
+        @include md{
+            height: 30rem;
+            margin: 0 -4rem;
+        }
     }
 
-    &__desc{
-        width: 50%;
+
+
+    &__right{
+        width: 50%;        
         align-items: center;
+        padding-left: 3rem;
+        @include md{
+            width: 40rem;
+            max-width: 100%;
+            margin-bottom: 5rem;
+            padding-left: 0;
+        }
+       
+        
+        
+        &--item{
+            margin-bottom: 5rem;
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+           
+        }
+        &--title{
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        &--text{
+            @include roboto;
+            color: $dark;
+        }
     }
-    
+
+    &__list{
+        display: flex;
+    }
+    &__item{
+        &:not(:first-child){
+            margin-left: .6rem;
+            @include md{
+            margin-left: 1.5rem;;
+            }
+        }
+       
+    }    
 
 
     &-pic{
         width: 3.5rem;
         height: 3.5rem;
+        @include md{
+            width: 4.5rem;
+            height: 4.5rem;
+        }
     }
 }

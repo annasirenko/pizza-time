@@ -43,7 +43,7 @@ $ginger:#ff5441;
   color: #fff;
   font-weight: 400;
   padding: 2rem 6rem;
-  transition: all .3s ease-in-out;
+  transition: background .3s ease-in-out, color .3s ease-in-out;
   outline: none;
 }
 
@@ -66,8 +66,14 @@ $ginger:#ff5441;
   }
 }
 
+@mixin xxxl(){
+  @media screen and (max-width: 1800px) {
+    @content;
+  }
+}
+
 @mixin xxl() {
-  @media screen and (min-width: 1400px) {
+  @media screen and (max-width: 1600px) {
     @content;
   }
 }
