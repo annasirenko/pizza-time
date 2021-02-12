@@ -1,0 +1,20 @@
+.popup{
+    &__title{
+        @include title;
+        @include sm{
+            font-size: 3rem;
+        }
+    }
+    &__subtitle{
+        @include roboto;
+        font-size: 2.4rem;
+        
+        @include sm{
+            font-size: 2rem;
+        }
+    }
+    &__phone{
+        color: inherit;
+        white-space: nowrap;
+    }
+    }
