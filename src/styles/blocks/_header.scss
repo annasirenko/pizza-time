@@ -1,6 +1,6 @@
 .header {
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -9,6 +9,7 @@
     padding: .9rem 0;
     display: flex;
     align-items: center;
+    
 
     & .container {
         display: flex;
@@ -40,6 +41,7 @@
 
     &__item {
         padding: 2rem 3rem;
+        transition: padding .3s;
 
         & a {
             display: block;
@@ -58,8 +60,7 @@
                 width: 0;
             }
 
-            &:hover:after,
-            &:focus:after {
+            &:hover:after{
                 width: 100%;
                 left: 0;
             }
@@ -103,6 +104,10 @@
         @include lg {
             display: inline-block;
         }
+    }
+    &.active &__item{
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
