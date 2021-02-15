@@ -141,6 +141,7 @@
             border-radius: 2.1rem;
             overflow: hidden;
             box-shadow: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.1);
+            position: relative;
 
 
         }
@@ -150,6 +151,10 @@
             color: $disabled;
             padding: 1.3rem 3.3rem;
             border-radius: 2.1rem;
+            transition: color .3s ease-in-out;
+            &:hover, &:focus{
+                color: $enabled;
+            }
 
             &.active {
                 color: $enabled;
@@ -266,10 +271,8 @@
         margin-bottom: 2.5rem;
         flex-grow: 1;
     }
-
-
-
 }
+
 
 @media screen and (max-width: 767px) {
     .menu__card:last-of-type {

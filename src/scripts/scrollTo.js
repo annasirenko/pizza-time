@@ -8,8 +8,8 @@
         let targetOffsetTop = targetTop + scrollTop;
         let headerOffset = document.querySelector('.header').clientHeight;
 
-        window.scrollTo(0, targetOffsetTop - headerOffset + 10);
-    }
+        window.scrollTo(0, targetOffsetTop - headerOffset);
+    };
 
 
     myLib.body.addEventListener('click', function (e) {
@@ -27,5 +27,5 @@
         if (scrollToItem) {
             scroll(scrollToItem);
         }
-    })
+    });
 })();

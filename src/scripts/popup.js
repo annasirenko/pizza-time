@@ -3,11 +3,11 @@
 
     let showPopup = function (target) {
         target.classList.add('active');
-    }
+    };
 
     let closePopup = function (target) {
         target.classList.remove('active');
-    }
+    };
 
 
 
@@ -20,7 +20,7 @@
             return;
         }
 
-        e.preventDefault;
+        e.preventDefault();
 
         let popup = document.querySelector('.' + popupClass);
 
@@ -42,7 +42,7 @@
             closePopup(popup);
             myLib.toggleScroll();
         }
-    })
+    });
     myLib.body.addEventListener('keydown', function (e) {
         if (e.keyCode !== 27) {
             return;
@@ -54,5 +54,5 @@
             closePopup(popup);
             myLib.toggleScroll();
         }
-    })
+    });
 })();

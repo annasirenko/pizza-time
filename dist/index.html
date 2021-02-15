@@ -58,15 +58,19 @@
                 <h2 class="menu__title">Меню</h2>
                 <nav class="menu__nav">
                     <ul class="menu__list">
-                        <li class="menu__item"><button class="menu__item--button active" type="button">все</button></li>
-                        <li class="menu__item"><button class="menu__item--button" type="button">грибные</button></li>
-                        <li class="menu__item"><button class="menu__item--button" type="button">мясные</button></li>
-                        <li class="menu__item"><button class="menu__item--button" type="button">сырные</button></a></li>
+                        <li class="menu__item"><button class="menu__item--button active" type="button"
+                                data-filter="all">все</button></li>
+                        <li class="menu__item"><button class="menu__item--button" type="button"
+                                data-filter="mushrooms">грибные</button></li>
+                        <li class="menu__item"><button class="menu__item--button" type="button"
+                                data-filter="meat">мясные</button></li>
+                        <li class="menu__item"><button class="menu__item--button" type="button"
+                                data-filter="cheese">сырные</button></a></li>
                     </ul>
                 </nav>
             </header>
             <ul class="menu__cards">
-                <li class="menu__card">
+                <li class="menu__card" data-category="meat">
                     <div class="menu__product catalog">
                         <img src="./img/1.png" alt="" class="menu__img">
                         <div class="menu__content">
@@ -83,6 +87,7 @@
                             </li>
                             <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
                             </li>
+
                         </ul>
                         <div class="menu__bottom">
                             <div class="menu__price">
@@ -94,7 +99,7 @@
 
                     </div>
                 </li>
-                <li class="menu__card">
+                <li class="menu__card" data-category="cheese">
                     <div class="menu__product catalog">
                         <img src="./img/2.png" alt="" class="menu__img">
                         <div class="menu__content">
@@ -111,6 +116,7 @@
                             </li>
                             <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
                             </li>
+
                         </ul>
                         <div class="menu__bottom">
                             <div class="menu__price">
@@ -122,7 +128,7 @@
 
                     </div>
                 </li>
-                <li class="menu__card">
+                <li class="menu__card" data-category="mushrooms">
                     <div class="menu__product catalog">
                         <img src="./img/3.png" alt="" class="menu__img">
                         <div class="menu__content">
@@ -139,6 +145,7 @@
                             </li>
                             <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
                             </li>
+
                         </ul>
                         <div class="menu__bottom">
                             <div class="menu__price">
@@ -150,7 +157,7 @@
 
                     </div>
                 </li>
-                <li class="menu__card">
+                <li class="menu__card" data-category="meat">
                     <div class="menu__product catalog">
                         <img src="./img/4.png" alt="" class="menu__img">
                         <div class="menu__content">
@@ -166,6 +173,7 @@
                             </li>
                             <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
                             </li>
+
                         </ul>
                         <div class="menu__bottom">
                             <div class="menu__price">
@@ -177,7 +185,7 @@
 
                     </div>
                 </li>
-                <li class="menu__card">
+                <li class="menu__card" data-category="cheese">
                     <div class="menu__product catalog">
                         <img src="./img/5.png" alt="" class="menu__img">
                         <div class="menu__content">
@@ -192,6 +200,7 @@
                             </li>
                             <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
                             </li>
+
                         </ul>
                         <div class="menu__bottom">
                             <div class="menu__price">
@@ -203,7 +212,7 @@
 
                     </div>
                 </li>
-                <li class="menu__card">
+                <li class="menu__card" data-category="mushrooms">
                     <div class="menu__product catalog">
                         <img src="./img/6.png" alt="" class="menu__img">
                         <div class="menu__content">
@@ -219,6 +228,7 @@
                             </li>
                             <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
                             </li>
+
                         </ul>
                         <div class="menu__bottom">
                             <div class="menu__price">
@@ -230,7 +240,7 @@
 
                     </div>
                 </li>
-                <li class="menu__card">
+                <li class="menu__card" data-category="meat">
                     <div class="menu__product catalog">
                         <img src="./img/7.png" alt="" class="menu__img">
                         <div class="menu__content">
@@ -247,6 +257,7 @@
                             </li>
                             <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
                             </li>
+
                         </ul>
                         <div class="menu__bottom">
                             <div class="menu__price">
@@ -258,7 +269,7 @@
 
                     </div>
                 </li>
-                <li class="menu__card">
+                <li class="menu__card" data-category="cheese">
                     <div class="menu__product catalog">
                         <img src="./img/8.png" alt="" class="menu__img">
                         <div class="menu__content">
@@ -273,6 +284,7 @@
                             </li>
                             <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
                             </li>
+
                         </ul>
                         <div class="menu__bottom">
                             <div class="menu__price">
@@ -284,7 +296,7 @@
 
                     </div>
                 </li>
-                <li class="menu__card">
+                <li class="menu__card" data-category="mushrooms">
                     <div class="menu__product catalog">
 
                         <img src="./img/9.png" alt="" class="menu__img">
@@ -302,6 +314,7 @@
                             </li>
                             <li class="menu__card--item"><button class="menu__card--button" type="button">25см</button>
                             </li>
+
                         </ul>
                         <div class="menu__bottom">
                             <div class="menu__price">
@@ -416,15 +429,15 @@
                 <div class="popup__data">
                     <img src="./img/1.png" alt="" class="popup__img">
                     <h3 class="popup__data--title">
-                        <span>Салями</span>
-                        <span>850</span> &#8372;
+                        <span class="popup__data--name">Салями</span>
+                        <span class="popup__data--price">850</span> &#8372;
                     </h3>
                     <p class="popup__size">35 см</p>
                 </div>
                 <form action="#" class="form">
-                    <input type="hidden" name="pizza">
-                    <input type="hidden" name="price">
-                    <input type="hidden" name="size">
+                    <input class="order-info-title" type="hidden" name="пицца">
+                    <input class="order-info-price" type="hidden" name="цена">
+                    <input class="order-info-size" type="hidden" name="размер">
                     <input type="text" class="form__input" name="name" placeholder="Имя" required>
                     <input type="text" class="form__input" name="phone" placeholder="Телефон" required>
                     <input type="text" class="form__input" name="address" placeholder="Адрес" required>
