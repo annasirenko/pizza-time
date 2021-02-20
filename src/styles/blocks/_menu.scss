@@ -152,7 +152,9 @@
             padding: 1.3rem 3.3rem;
             border-radius: 2.1rem;
             transition: color .3s ease-in-out;
-            &:hover, &:focus{
+
+            &:hover,
+            &:focus {
                 color: $enabled;
             }
 
@@ -244,9 +246,9 @@
         }
 
         &:active {
-                opacity: .8;
-                transform: scale(.6);
-            }
+            opacity: .8;
+            transform: scale(.6);
+        }
     }
 
     &__product {

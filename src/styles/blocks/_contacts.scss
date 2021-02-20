@@ -1,18 +1,20 @@
-.contacts{
+.contacts {
     padding: 12rem 0;
-    position: relative; 
+    position: relative;
     overflow: hidden;
-    @include md{
+
+    @include md {
         padding-bottom: 0;
     }
-  
-   
 
-    & .container{
-        
+
+
+    & .container {
+
         position: relative;
-        &::before{
-            content:'';
+
+        &::before {
+            content: '';
             position: absolute;
             background: url('./img/tomato.jpg') no-repeat;
             background-size: cover;
@@ -21,57 +23,64 @@
             bottom: -10rem;
             right: -35rem;
             z-index: -1;
-            @include xxxl{
+
+            @include xxxl {
                 right: -25rem;
-                
-            }
-          
-            @include xxl{
-                right: -17rem;
-                bottom: -20rem;
-                
+
             }
 
-            @include custom{
+            @include xxl {
+                right: -17rem;
+                bottom: -20rem;
+
+            }
+
+            @include custom {
                 right: -12rem;
             }
-            @include xl{
+
+            @include xl {
                 content: none;
             }
-          
+
         }
     }
-    
-    &__title{
+
+    &__title {
         @include title;
         color: $dark;
     }
 
-    &__content{
+    &__content {
         display: flex;
         align-items: center;
-       @include md{
-        flex-wrap: wrap;
-        justify-content: center;
-       }
-        
+
+        @include md {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
     }
 
-    &__left{
+    &__left {
         width: 50%;
-        @include md{
+
+        @include md {
             width: 100%;
             order: 1;
         }
     }
 
-    &__map{
+    &__map {
         height: 45rem;
-        background: #fef0b4;
-        @include lg{
+        background: #fef0b4 url('./img/map.jpg') no-repeat center;
+        background-size: cover;
+
+        @include lg {
             height: 35rem;
         }
-        @include md{
+
+        @include md {
             height: 30rem;
             margin: 0 -4rem;
         }
@@ -79,54 +88,62 @@
 
 
 
-    &__right{
-        width: 50%;        
+    &__right {
+        width: 50%;
         align-items: center;
         padding-left: 3rem;
-        @include md{
+
+        @include md {
             width: 40rem;
             max-width: 100%;
             margin-bottom: 5rem;
             padding-left: 0;
         }
-       
-        
-        
-        &--item{
+
+
+
+        &--item {
             margin-bottom: 5rem;
-            &:last-of-type{
+
+            &:last-of-type {
                 margin-bottom: 0;
             }
-           
+
         }
-        &--title{
+
+        &--title {
             font-size: 1.8rem;
             margin-bottom: 1rem;
         }
-        &--text{
+
+        &--text {
             @include roboto;
             color: $dark;
         }
     }
 
-    &__list{
+    &__list {
         display: flex;
     }
-    &__item{
-        &:not(:first-child){
+
+    &__item {
+        &:not(:first-child) {
             margin-left: .6rem;
-            @include md{
-            margin-left: 1.5rem;;
+
+            @include md {
+                margin-left: 1.5rem;
+                ;
             }
         }
-       
-    }    
+
+    }
 
 
-    &-pic{
+    &-pic {
         width: 3.5rem;
         height: 3.5rem;
-        @include md{
+
+        @include md {
             width: 4.5rem;
             height: 4.5rem;
         }

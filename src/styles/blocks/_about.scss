@@ -1,53 +1,61 @@
-.about{
-    position: relative;
-    // display: flex;
+.about {
+    position: relative;    
     background: linear-gradient(to top, #2c2c2c, $dark);
     color: #fff;
-    &__img{
+
+    &__img {
         position: absolute;
         top: 0;
         left: 0;
         width: 50%;
         height: 100%;
         object-fit: cover;
-        @include md{
+
+        @include md {
             width: 100%;
         }
     }
-    & .container{
+
+    & .container {
         position: relative;
         display: flex;
-        justify-content: flex-end;    
-        @include md{
+        justify-content: flex-end;
+
+        @include md {
             justify-content: center;
-        }  
+        }
     }
 
-    &__container{
+    &__container {
         max-width: 135rem;
-       
+
     }
-    &__content{
-        width: 50%;           
+
+    &__content {
+        width: 50%;
         padding: 13rem 0 15.5rem 8rem;
-        @include xl{
+
+        @include xl {
             padding-top: 8rem;
             padding-bottom: 8rem;
             padding-left: 5rem;
         }
-        @include md{
+
+        @include md {
             padding-left: 0;
             width: 50rem;
             max-width: 100%;
         }
-        
+
     }
-    &__title{
+
+    &__title {
         @include title;
         color: #fff;
         text-align: left;
     }
-    &__desc{
+
+    &__desc {
         @include roboto;
         text-align: left;
         line-height: 3rem;

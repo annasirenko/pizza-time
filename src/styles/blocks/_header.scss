@@ -9,7 +9,7 @@
     padding: .9rem 0;
     display: flex;
     align-items: center;
-    
+
 
     & .container {
         display: flex;
@@ -60,7 +60,7 @@
                 width: 0;
             }
 
-            &:hover:after{
+            &:hover:after {
                 width: 100%;
                 left: 0;
             }
@@ -78,9 +78,9 @@
         background: transparent;
         padding: 1.4rem 2rem;
         border-radius: 2.8rem;
-        transition: color .3s ease-in-out, border .3s ease-in-out;     
-        
-       
+        transition: color .3s ease-in-out, border .3s ease-in-out;
+
+
 
         &:hover,
         &:focus {
@@ -105,7 +105,8 @@
             display: inline-block;
         }
     }
-    &.active &__item{
+
+    &.active &__item {
         padding-top: 0;
         padding-bottom: 0;
     }

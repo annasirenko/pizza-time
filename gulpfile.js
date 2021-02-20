@@ -29,6 +29,11 @@ task("copy:html", () => {
     .pipe(dest("dist"))
     .pipe(reload({ stream: true }));
 });
+task("copy:php", () => {
+  return src("src/mailer/**/*.php")
+    .pipe(dest("dist/php"))
+    .pipe(reload({ stream: true }));
+});
 
 task("copy:img", () => {
   return src("src/img/**/*").pipe(dest("dist/img"));
@@ -118,6 +123,7 @@ task("server", () => {
 task("watch", () => {
   watch("./src/styles/**/*.scss", series("styles"));
   watch("./src/*.html", series("copy:html"));
+  watch(".src/mailer/**/*.php", series("copy:php"));
   watch("./src/scripts/*.js", series("scripts"));
   watch("./src/img/icons/*.svg", series("icons"));
 });
@@ -126,7 +132,7 @@ task(
   "default",
   series(
     "clean",
-    parallel("copy:html", "copy:img", "copy:fonts", "styles", "scripts", "icons"),
+    parallel("copy:html", "copy:php", "copy:img", "copy:fonts", "styles", "scripts", "icons"),
     parallel("watch", "server")
   )
 );
@@ -135,6 +141,6 @@ task(
   "build",
   series(
     "clean",
-    parallel("copy:html", "copy:img", "copy:fonts", "styles", "scripts", "icons")
+    parallel("copy:html", "copy:php", "copy:img", "copy:fonts", "styles", "scripts", "icons")
   )
 );
