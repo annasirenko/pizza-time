@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Заказать пиццу онлайн">
+    <meta name="keywords" content="пицца">
     <meta name="robots" content="index,follow">
+    <meta property="og:title" content="PizzaTime - лучшая пицца в Днепре" />
+    <meta property="og:description" content="PizzaTime - лучшая пицца в Днепре" />   
+    <meta property="og:image" content="img/hero.jpg" />
     <link rel="apple-touch-icon"  sizes="180x180" href="./img/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
@@ -47,7 +51,7 @@
             </div>
         </div>
     </header>
-    <section class="hero">
+    <section class="hero lazy" data-bg="img/hero.jpg">
         <div class="container">
 
             <div class="hero__block">
@@ -79,7 +83,7 @@
             <ul class="menu__cards">
                 <li class="menu__card" data-category="meat">
                     <div class="menu__product catalog">
-                        <img src="./img/1.png" alt="" class="menu__img">
+                        <img data-src="./img/1.png" alt="" class="menu__img lazy">
                         <div class="menu__content">
                             <h3 class="menu__card--title">Салями</h3>
                             <p class="menu__desc">Салями, картофель и морковь, огурцы
@@ -108,7 +112,7 @@
                 </li>
                 <li class="menu__card" data-category="cheese">
                     <div class="menu__product catalog">
-                        <img src="./img/2.png" alt="" class="menu__img">
+                        <img data-src="./img/2.png" alt="" class="menu__img lazy">
                         <div class="menu__content">
                             <h3 class="menu__card--title">Хит</h3>
                             <p class="menu__desc">Картофель и морковь, огурцы
@@ -137,7 +141,7 @@
                 </li>
                 <li class="menu__card" data-category="mushrooms">
                     <div class="menu__product catalog">
-                        <img src="./img/3.png" alt="" class="menu__img">
+                        <img data-src="./img/3.png" alt="" class="menu__img lazy">
                         <div class="menu__content">
                             <h3 class="menu__card--title">Ветчина-грибы</h3>
                             <p class="menu__desc">Салями, картофель и морковь, огурцы
@@ -166,7 +170,7 @@
                 </li>
                 <li class="menu__card" data-category="meat">
                     <div class="menu__product catalog">
-                        <img src="./img/4.png" alt="" class="menu__img">
+                        <img data-src="./img/4.png" alt="" class="menu__img lazy">
                         <div class="menu__content">
                             <h3 class="menu__card--title">Карбонара</h3>
                             <p class="menu__desc">Салями, курица, моцарелла, говядина,
@@ -194,7 +198,7 @@
                 </li>
                 <li class="menu__card" data-category="cheese">
                     <div class="menu__product catalog">
-                        <img src="./img/5.png" alt="" class="menu__img">
+                        <img data-src="./img/5.png" alt="" class="menu__img lazy">
                         <div class="menu__content">
                             <h3 class="menu__card--title">Фирменная</h3>
                             <p class="menu__desc">Томатно-сливочный соус, бекон, моцарелла </p>
@@ -221,7 +225,7 @@
                 </li>
                 <li class="menu__card" data-category="mushrooms">
                     <div class="menu__product catalog">
-                        <img src="./img/6.png" alt="" class="menu__img">
+                        <img data-src="./img/6.png" alt="" class="menu__img lazy">
                         <div class="menu__content">
                             <h3 class="menu__card--title">Ассорти</h3>
                             <p class="menu__desc">Картофель моцарелла, цыпленок, грибы,
@@ -249,7 +253,7 @@
                 </li>
                 <li class="menu__card" data-category="meat">
                     <div class="menu__product catalog">
-                        <img src="./img/7.png" alt="" class="menu__img">
+                        <img data-src="./img/7.png" alt="" class="menu__img lazy">
                         <div class="menu__content">
                             <h3 class="menu__card--title">Л-01</h3>
                             <p class="menu__desc">Томаты, моцарелла, цыпленок,
@@ -278,7 +282,7 @@
                 </li>
                 <li class="menu__card" data-category="cheese">
                     <div class="menu__product catalog">
-                        <img src="./img/8.png" alt="" class="menu__img">
+                        <img data-src="./img/8.png" alt="" class="menu__img lazy">
                         <div class="menu__content">
                             <h3 class="menu__card--title">Три сыра</h3>
                             <p class="menu__desc">Чеддер, камамбер, эдам </p>
@@ -306,7 +310,7 @@
                 <li class="menu__card" data-category="mushrooms">
                     <div class="menu__product catalog">
 
-                        <img src="./img/9.png" alt="" class="menu__img">
+                        <img data-src="./img/9.png" alt="" class="menu__img lazy">
                         <div class="menu__content">
                             <h3 class="menu__card--title">Мясная</h3>
                             <p class="menu__desc">Курица, говядина, сливочный соус, салями,
@@ -339,7 +343,7 @@
         </div>
     </section>
     <section class="about">
-        <img src="./img/about.jpg" alt="" class="about__img">
+        <img data-src="./img/about.jpg" alt="" class="about__img lazy">
         <div class="container about__container">
             <div class="about__content">
                 <h2 class="about__title">О нас</h2>
@@ -487,7 +491,7 @@
 
         </div>
     </div>
-  
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
   <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRJrll3iPtWUXzk1vIN6_5JLgFqjTa7uQ&callback=initMap">
 </script>
