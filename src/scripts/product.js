@@ -7,13 +7,20 @@
     return;
   }
 
-  let changeProductSize = function (target) {
+  let updateProductPrice = function(product, price) {
+    let productPrice = product.querySelector('.menu__price--value');
+    productPrice.textContent = price;
+
+  }
+  let changeProductSize = function(target) {
 
     let product = myLib.closestItemByClass(target, 'catalog');
     let previousBtnActive = product.querySelector('.menu__card--button.active');
+    let newPrice = target.getAttribute('data-product-size-price');
 
     previousBtnActive.classList.remove('active');
     target.classList.add('active');
+    updateProductPrice(product, newPrice);
   };
 
   let changeProductOrderInfo = function (target) {

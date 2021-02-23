@@ -13,7 +13,7 @@ sendButton.addEventListener('click', (e) => {
             phone: form.elements.phone.value,
             address: form.elements.address.value
         }
-        const formData = new FormData(form);
+        let formData = new FormData(form);
         formData.append("pizza", form.elements.pizza.value);
         formData.append("price", form.elements.price.value);
         formData.append("size", form.elements.size.value);
@@ -21,9 +21,10 @@ sendButton.addEventListener('click', (e) => {
         formData.append("phone", form.elements.phone.value);
         formData.append("address", form.elements.address.value);
 
-        const xhr = new XMLHttpRequest();
+        let xhr = new XMLHttpRequest();
         xhr.responseType = 'json';
         xhr.open('POST', './php/sendmail.php');
+        xhr.setRequestHeader("Content-type", "application/json");
         xhr.send(formData);
         xhr.addEventListener('load', () => {
             if (xhr.response) {
@@ -63,3 +64,58 @@ function validateField(field) {
     //       return true;
     //   }
 }
+
+
+
+// window.addEventListener('DOMContentLoaded', () => {
+//     const forms = () => {
+//         const form = document.querySelectorAll('.form-send'),
+//               inputs = document.querySelectorAll('input');
+    
+//         const message = {
+//             success: document.querySelector('.popup__thanks'),
+//             error: 'Что-то пошло не так...'
+//         };
+    
+//         const postData = async (url, data) => {
+//             let res = await fetch(url, {
+//                 method: "POST",
+//                 body: data
+//             });
+    
+//             return await res.text();
+    
+//         };
+    
+//         const clearInputs = () => {
+//             inputs.forEach(item => {
+//                 item.value = '';
+//             })
+//         }
+    
+    
+    
+//         form.forEach(item => {
+//             item.addEventListener('submit', (e) => {
+//                 e.preventDefault();
+    
+//                 let statusMessage = document.createElement('div');
+//                 statusMessage.classList.add('error');
+//                 item.appendChild(statusMessage);
+    
+//                 const formData = new FormData(item);
+    
+//                 postData('php/mail.php', formData)
+//                     .then(res => {
+//                         console.log(res);
+//                         message.success.classList.add('active');
+//                     })
+//                      .catch(() => statusMessage.textContent = message.error)
+//                      .finally(() => {
+//                         clearInputs();
+//                         statusMessage.remove();
+//                      }, 5000);
+//             })
+//         })
+//     }
+// })
